@@ -48,7 +48,6 @@ module tb_lfp_ae_fp64_full;
 
                 frac = x - 1.0;
 
-                // Safe truncation (no rounding to 16!)
                 Mi = $floor(frac * 16.0);
 
                 if (Mi < 0)  Mi = 0;
